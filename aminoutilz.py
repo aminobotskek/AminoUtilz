@@ -73,8 +73,6 @@ members_count >> {chat_info['membersCount']}
 tippers_count >> {chat_info['tipInfo']['tippersCount']}
 tipped_coins >> {chat_info['tipInfo']['tippedCoins']}
 thread_Id >> {thread_Id}""")
-def copy_chat():
-	link_info = client.get_from_code(input("Chat Link >> "))
 def my_community():
 	clients = client.sub_clients()
 	for x, name in enumerate(clients.name, 1):
